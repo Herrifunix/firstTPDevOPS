@@ -10,7 +10,7 @@ class Devsecops2ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		Car car = new Car("BB22CC", "Ferrai", 2000);
+		Car car = new Car("BB22CC", "beefborghini", 2000);
 		String plateNumber = car.getPlateNumber();
 		assertEquals(plateNumber, "BB22CC");
 	}
