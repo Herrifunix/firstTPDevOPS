@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 @RestController
 public class ServiceWeb {
-
+    
     ArrayList<Car>cars = new ArrayList<Car>();
 
     public ServiceWeb() {
@@ -17,6 +17,8 @@ public class ServiceWeb {
         car = new Car("BB22CC", "porsche", 1000);
         cars.add(car);
         car = new Car("CC33DD", "peugeot", 500);
+        cars.add(car);
+        car = new Car("DD44EE", "Lancia", 500);
         cars.add(car);
     }
 
