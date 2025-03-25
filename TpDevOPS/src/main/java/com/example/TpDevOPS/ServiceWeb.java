@@ -12,7 +12,7 @@ public class ServiceWeb {
     ArrayList<Car>cars = new ArrayList<Car>();
 
     public ServiceWeb() {
-        Car car = new Car("AA11BB", "ferrari", 2000);
+        Car car = new Car("ZZ99YY", "ferrari", 2000);
         cars.add(car);
         car = new Car("BB22CC", "porsche", 1000);
         cars.add(car);
