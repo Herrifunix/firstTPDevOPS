@@ -7,13 +7,18 @@ jobs:
     name: build
     steps:
       - uses: actions/checkout@v2
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'adopt'
+          distribution: 'temurin'  # "adopt" is deprecated, use "temurin"
+
+      - name: Install Gradle
+        uses: gradle/gradle-build-action@v2  # This installs Gradle automatically
+
       - name: Build and test
         working-directory: .
         run: |
           export SHELL=/bin/bash
-          ./TpDevOPS/gradlew build
+          gradle build  # Using installed Gradle instead of ./gradlew
